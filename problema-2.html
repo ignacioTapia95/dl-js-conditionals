@@ -56,13 +56,14 @@ sea mayor que 10
 
     <div class="botones">
         <button onclick="
-            let sticker1 = document.getElementById('sticker-1').value;
-            let sticker2 = document.getElementById('sticker-2').value;
-            let sticker3 = document.getElementById('sticker-3').value;
+            let sticker1 = document.getElementById('sticker-1').value | 0;
+            let sticker2 = document.getElementById('sticker-2').value | 0;
+            let sticker3 = document.getElementById('sticker-3').value | 0;
             let total = parseInt(sticker1) + parseInt(sticker2) + parseInt(sticker3);
+            console.log(total);
             if (total <= 10) {
                 document.getElementById('resumen-orden').innerHTML = 'Llevas ' + total + ' stickers';
-            } else {
+            } else if (total > 10) {
                 document.getElementById('resumen-orden').innerHTML = 'Llevas demasiados stickers';
             }
         ">Validar</button>
