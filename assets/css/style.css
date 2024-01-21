@@ -1,0 +1,110 @@
+h1, h2{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+p{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+li{
+    font-family: sans-serif;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+a{
+    margin: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.hero img{
+    width: 30%;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.instructions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.gallery img{
+    width: 100%;
+    margin: 10px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.password-validation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+}

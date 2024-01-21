@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <h1>Desafio Condicionales JavaScript</h1>
+    <h2>Problema 2</h2>
+
+    <div class="instructions">
+        <p>
+            Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos
+            disponibles. Para eso deberá existir un input debajo de cada imagen donde el
+            usuario podrá ingresar un número. En caso de que la suma de todos los stickers
+            seleccionados sea menor o igual 10 se indicará en un párrafo nuevo la cantidad de
+            stickers llevados. Ejemplo "llevas 5 stickers" en cualquier otro caso se mostrará un
+            texto que dice "Llevas demasiados stickers".
+        </p>
+        <ol>
+            <li>
+                El párrafo muestra la cantidad de stickers seleccionados
+            </li>
+            <li>
+                El párrafo muestra que lleva demasiados stickers en caso de que la cantidad
+sea mayor que 10
+            </li>
+        </ol>
+    </div>
+
+
+
+    <div class="gallery">
+        
+        <div class="product">
+            <img src="assets/img/js-prblema-2-sticker-1.jpeg" alt="">
+            <input type="number" id="sticker-1" placeholder="# Unidades">
+        </div>
+
+        <div class="product">
+            <img src="assets/img/js-prblema-2-sticker-2.jpeg" alt="">
+            <input type="number" id="sticker-2" placeholder="# Unidades">
+        </div>
+
+        <div class="product">
+            <img src="assets/img/js-prblema-2-sticker-3.jpeg" alt="">
+            <input type="number" id="sticker-3" placeholder="# Unidades">
+        </div>
+
+    </div>
+
+    <p id="resumen-orden"></p>
+
+    <div class="botones">
+        <button onclick="
+            let sticker1 = document.getElementById('sticker-1').value;
+            let sticker2 = document.getElementById('sticker-2').value;
+            let sticker3 = document.getElementById('sticker-3').value;
+            let total = parseInt(sticker1) + parseInt(sticker2) + parseInt(sticker3);
+            if (total <= 10) {
+                document.getElementById('resumen-orden').innerHTML = 'Llevas ' + total + ' stickers';
+            } else {
+                document.getElementById('resumen-orden').innerHTML = 'Llevas demasiados stickers';
+            }
+        ">Validar</button>
+
+        
+        <button><a href="index.html">Volver al menu</a></button> 
+    </div>
+
+</body> 
+</html>

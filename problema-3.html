@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <h1>Desafio Condicionales JavaScript</h1>
+    <h2>Problema 3</h2>
+
+    <div class="instructions">  
+
+        <p>
+            Se debe construir una página con 3 select y opciones con dígitos del 1 al 9, al hacer
+            click a la opción ingresar se debe verificar que el password sea 911 y en ese caso
+            mostrar debajo del botón ingresar, un párrafo con el contenido "password 1
+            correcto", en caso de que el password sea 714 se debe mostrar en el párrafo
+            "password 2 es correcto", si ingresa otro valor se debe mostrar "password
+            incorrecto". (Total: 4 puntos)
+        </p>
+        <ol>
+            <li>
+                Se muestra correctamente el párrafo "password 1 correcto" al ingresar el
+                password 911 utilizando los select y luego presionando botón con el texto
+                ingresar. (1 punto)
+            </li>
+            <li>
+                Adicionalmente se muestra correctamente el párrafo "password 2 correcto" al
+                ingresar el password 714 utilizando los select y luego presionando botón con el
+                texto ingresar. (2 puntos)
+            </li>
+            <li>
+                Se muestra password incorrecto al seleccionar cualquier otro password (1
+                punto).
+            </li>
+        </ol>
+    </div>
+
+    <div class="password-validation">
+
+        <h3>Ingresa el password</h3>
+
+        <div class="inputs">
+            <select id="password-1">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+
+            </select>
+    
+            <select id="password-2">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+    
+            <select id="password-3">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+        <p id="password"></p>
+
+        <button onclick="
+            let password1 = document.getElementById('password-1').value;
+            let password2 = document.getElementById('password-2').value;
+            let password3 = document.getElementById('password-3').value;
+            let password = password1 + password2 + password3;
+            let parrafo = document.getElementById('password');
+            if (password == 911) {
+                parrafo.innerHTML = 'Password 1 correcto';
+            } else if (password == 714) {
+                parrafo.innerHTML = 'Password 2 correcto';
+            } else {
+                parrafo.innerHTML = 'Password incorrecto';
+            }
+        ">Ingresar</button>
+
+        
+
+    </div>
+
+    <div class="botones">
+        <button><a href="index.html">Volver al menu</a></button>
+    </div>
+
+
+
+</body> 
+</html>

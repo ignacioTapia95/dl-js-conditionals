@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <h1>Desafio Condicionales JavaScript</h1>
+    <h2>Problema 1</h2>
+
+    <div class="instructions">  
+        
+        <p>
+            Se debe construir una página con una única imagen, al hacerle click a la imagen se
+            le debe agregar un borde rojo de 2 pixeles, al hacerle click nuevamente se le debe
+            quitar el borde. (Total: 2 puntos)
+        </p>
+        <ol>
+            <li>
+                Agregar borde con el click
+            </li>
+            <li>
+                Si tiene borde, quitarle el borde con el click
+            </li>
+        </ol>
+    </div>
+
+    <div class="hero">
+        <img src="assets/img/js-problema-1.webp" alt="">
+        <button onclick="
+            let img = document.querySelector('img');
+            if (img.style.border == '') {
+                img.style.border = '2px solid red';
+            } else {
+                img.style.border = '';
+            }
+        ">Validar</button>
+        <button><a href="index.html">Volver al menu</a></button> 
+    </div>
+</body>
+</html>
